@@ -1,0 +1,2 @@
+# MinTectBlog
+min TechBlog
