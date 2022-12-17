@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div>
-    <nav style={{borderBottom: '1px solid gray'}}>
+    <nav style={{borderBottom: '1px solid rgba(0,27,55,0.1)', height: '60px'}}>
       <div className="maxpagewidth marginAuto">
         <div className="navmenu marginAuto">
           <div className="mainlogo">
@@ -13,7 +13,7 @@ function App() {
             </a>
           </div>
           <div style={{display: 'none'}}></div>
-          <div className="navbar" style={{float: 'right'}}>
+          <div className="navbar">
             <ul className="navbar-menu">
               <li className="navbar-menu-item">
                 <a href="#">디자인</a>
@@ -22,27 +22,27 @@ function App() {
                 <a href="#">개발</a>
               </li>
               <li className="navbar-menu-item">
-                <a href="#">채용 바로가기</a>
+                <button class="p-button" type="button" aria-disabled="false">채용 바로가기</button>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
-    <section style={{maxWidth: '980px'}} className="marginAuto">
+    <section style={{maxWidth: '980px', marginBottom: '192px'}} className="marginAuto">
       <div className="mainsection-inner">
-        <span style={{display: 'inline-block', fontSize: 'x-large', margin: '40px 0'}}>개발</span>
+        <span class="menu-title" >개발</span>
         <div> 
           <ul className="mainsection">
-            <a href="#">
-              <img src='/images/blogpostimg.png' alt="" />
+            <a class="mainserctionlink" href="#">
+              <img class="hover-img" src='/images/blogpostimg.png' alt="" />
               <div>
-                <span className="mainsectiontitle">제목1</span>
-                <span className="mainsectioncont">내용입니다.</span>
-                <span className="mainsectioncdt">2022-12-10</span>
+                <span class="hover-span" className="mainsectiontitle">토스증권 QA 문화 ‘통합테스트’를 아시나요? (feat. 해외주식)</span>
+                <span className="mainsectioncont">토스증권 해외주식 출시 전에 사내 임직원 대상으로 진행한 ‘통합테스트’에 대해 소개합니다. 통합테스트 진행 방식을 참고하여 간단한 규칙과 사용자 시나리오를 활용해 사용자의 반응을 미리 확인해 보세요.</span>
+                <span className="mainsectioncdt">2022. 12. 12</span>
               </div>
             </a>
-            <a href="#">
+            <a class="mainserctionlink" href="#">
             <img src="/images/blogpostimg.png" alt=""></img>
               <div>
                 <span className="mainsectiontitle">제목2</span>
@@ -50,7 +50,7 @@ function App() {
                 <span className="mainsectioncdt">2022-12-10</span>
               </div>
             </a>
-            <a href="#">
+            <a class="mainserctionlink" href="#">
             <img src="/images/blogpostimg.png" alt=""></img>
               <div>
                 <span className="mainsectiontitle">제목3</span>
