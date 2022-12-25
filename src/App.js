@@ -1,34 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import NavTop from './components/NavTop.js'
+import Footer from './components/Footer.js'
 
 function App() {
   return (
     <div>
-    <nav style={{borderBottom: '1px solid rgba(0,27,55,0.1)', height: '60px'}}>
-      <div className="maxpagewidth marginAuto">
-        <div className="navmenu marginAuto">
-          <div className="mainlogo">
-            <a href="#">
-              <img src="/images/toss.png" style={{maxWidth: '110px'}}></img>
-            </a>
-          </div>
-          <div style={{display: 'none'}}></div>
-          <div className="navbar">
-            <ul className="navbar-menu">
-              <li className="navbar-menu-item">
-                <a href="#">디자인</a>
-              </li>
-              <li className="navbar-menu-item">
-                <a href="#">개발</a>
-              </li>
-              <li className="navbar-menu-item">
-                <button class="p-button" type="button" aria-disabled="false">채용 바로가기</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <NavTop></NavTop>
     <section style={{maxWidth: '980px', marginBottom: '192px'}} className="marginAuto">
       <div className="mainsection-inner">
         <span class="menu-title" >개발</span>
@@ -43,7 +20,7 @@ function App() {
               </div>
             </a>
             <a class="mainserctionlink" href="#">
-            <img src="/images/blogpostimg.png" alt=""></img>
+            <img class="hover-img" src='/images/blogpostimg.png' alt="" />
               <div>
                 <span className="mainsectiontitle">제목2</span>
                 <span className="mainsectioncont">내용입니다.</span>
@@ -51,7 +28,7 @@ function App() {
               </div>
             </a>
             <a class="mainserctionlink" href="#">
-            <img src="/images/blogpostimg.png" alt=""></img>
+            <img class="hover-img" src='/images/blogpostimg.png' alt="" />
               <div>
                 <span className="mainsectiontitle">제목3</span>
                 <span className="mainsectioncont">내용입니다.</span>
@@ -62,72 +39,21 @@ function App() {
         </div>
       </div>
     </section>
-    <section>
-      <div>
-        <img src="" alt=""></img>
+    <section class="subsection">
+      <div class="subsection-img-wrap">
+        <img src="./images/website_code_blue_alpha.png" alt="" class="subsection-img"></img>
         <div>
-          <h5>하단 섹션 제목</h5>
-          <div>
+          <h5 class="subsection-title">하단 섹션 제목</h5>
+          <div class="subsection-cont">
             하단 내용입니다1
             <br></br>
             하단 내용입니다2
-            <a href="#">채용중인 공고 보기</a>
           </div>
+          <a href="#" class="p-button subsection-link">채용중인 공고 보기</a>
         </div>
       </div>
     </section>
-    <footer>
-      <div>
-        <div>
-          <ul>
-            <li>
-              <div>푸터1-1</div>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>
-              <div>푸터2-1</div>
-            </li>
-            <li>
-              <div>푸터2-2</div>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>
-              <div>푸터3-1</div>
-            </li>
-            <li>
-              <div>푸터3-2</div>
-            </li>
-          </ul>
-        </div>
-        <address>
-          <strong>(주)우당탕탕리액트대작전</strong>
-          "Copyright © Viva Republica, Inc. All Rights Reserved."
-        </address>
-        <ul>
-          <li>
-            <a href="#"></a>
-          </li>
-          <li>
-            <a href="#"></a>
-          </li>
-          <li>
-            <a href="#"></a>
-          </li>
-          <li>
-            <a href="#"></a>
-          </li>
-          <li>
-            <a href="#"></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+    <Footer></Footer>
   </div>
   );
 }
